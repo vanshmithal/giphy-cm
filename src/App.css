@@ -1,38 +1,142 @@
 .App {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: sans-serif;
+}
+.App > h1 {
+  padding: 40px;
+  color: rgb(7, 115, 187);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.cont {
+  width: 40%;
+  border: 1px solid black;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.heading {
+  padding: 5px;
+  border-bottom: 1px solid black;
+  background-color: rgb(224, 224, 224);
+}
+.heading > p {
+  font-size: 14px;
+  margin: 0;
+  padding: 5px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.text-field {
+  font-size: 15px;
+  padding: 2px 0px;
+  border: 0;
+  border-bottom: 1px solid;
+}
+
+.text-field:focus {
+  outline: none;
+}
+
+.text-field:hover {
+  background-color: rgb(252, 250, 250);
+}
+.post-box-dp {
+  display: flex;
+  justify-content: flex-start;
+  border: 1px solid black;
+  align-items: flex-start;
+  padding: 30px 30px 30px 10px;
+  margin: 15px;
+}
+.logo {
+  height: 50px;
+  padding-left: 10px;
+}
+.post-box {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: 15px;
+}
+.post-box-dp:hover {
+  background-color: rgb(252, 250, 250);
+}
+.post-box > .gif {
+  height: 200px;
+  width: min-content;
+  margin-left: 0;
+}
+.post-text {
+  font-size: 20px;
+  background-color: transparent;
+  border: 0;
 }
 
+.gif-area > button {
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-size: 15px;
+  border: 0;
+  color: white;
+  background-color: rgb(7, 115, 187);
+}
+
+.gif-area > button:active {
+  background-color: rgb(6, 100, 163);
+}
+
+.gif-area {
+  display: flex;
+  padding: 15px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.gif-cont {
+  width: 25%;
+  position: absolute;
+  background-color: rgb(252, 250, 250);
+  margin: 0px 15px;
+  padding: 0px 15px;
+  height: 300px;
+  overflow-y: auto;
+  border: 1px solid black;
+}
+.gif-cont:empty {
+  display: none;
+}
+.gif-cont > h5 {
+  border-bottom: 1px solid black;
+}
+.gif {
+  margin: 10px;
+  height: 75px;
+}
+.post-cont {
+  width: 40%;
+}
+.post {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(224, 224, 224);
+  align-items: flex-start;
+  border: 1px solid black;
+  margin-bottom: 15px;
+}
+.post-content-dp {
+  background-color: white;
+  width: 100%;
+  display: flex;
+  padding-top: 10px;
+  align-items: flex-start;
+}
+
+.post-content > p {
+  margin: 5px 0px 0px 10px;
+  padding-top: 10px;
+}
+.post-content > .gif {
+  height: 200px;
+}
 .App-link {
   color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
