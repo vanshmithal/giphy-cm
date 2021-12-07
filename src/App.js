@@ -17,8 +17,8 @@ function App() {
     const fetchGifs = async () => {
       const gifData = await gf.search(searchText).then((data) => {
         setData(data.data)
-        console.log(gifData)
       })
+      console.log(gifData)
     }
     fetchGifs()
   }, [searchText])
